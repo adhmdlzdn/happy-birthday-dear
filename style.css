@@ -1,0 +1,112 @@
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    /* background: #691912; */
+    /* background: #f8e09e; */
+    /* background: #e8ab41; */
+    background: #c5763d;
+    height: 100vh;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.kartu {
+    background: #fdfdfd;
+    border-radius: 4px;
+    height: 85vh;
+    width: 80vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+}
+
+img.kue {
+    max-height: 30vh;
+}
+
+.kata {
+    padding: 1em;
+}
+
+h1 {
+    font-size: 18pt;
+}
+
+.gwej {
+    font-size: 12pt;
+    opacity: 0.8;
+}
+
+.jarakEuy {
+  height: 100px;  
+}
+
+.iya {
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.ask {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.ask a {
+    font-size: 10px;
+    text-decoration: none;
+    border: 2px solid #f8e09e;
+    background-color: #ffffff;
+    color: #f8e09e;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 6px;
+}
+.ask a:hover {
+    background-color: #f8e09e;
+    border: 2px solid #f8e09e;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 1000px) {
+    h1 {
+        font-size: 25pt;
+    }
+    .gwej {
+        font-size: 14pt;
+    }
+    .iya {
+        font-size: 10pt;
+    }
+    .ask a {
+        font-size: 10pt;
+    }
+    .kartu {
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
+    img.kue {
+        height: 80%;    
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .kartu {
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
+    .kartu img.kue {
+        width: 100%;
+        max-width: 50vw;
+        max-height: unset;
+    }
+}
